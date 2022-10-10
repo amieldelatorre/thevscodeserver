@@ -28,5 +28,5 @@ RUN apt-get install -y wget
 # Install the vs code server and expose the port for it
 RUN wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
 EXPOSE 8000
-CMD ["code-server", "serve-local", "--without-connection-token", "--accept-server-license-terms", "--host", "0.0.0.0"]
+CMD ["code-server", "serve-local", "--disable-telemetry", "--without-connection-token", "--accept-server-license-terms", "--host", "0.0.0.0"]
 

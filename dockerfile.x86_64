@@ -22,7 +22,7 @@ RUN apt-get install -y wget
 #--------------------------------------------------------
 
 #-------------------- Install dotnet --------------------
-# RUN wget -O - https://raw.githubusercontent.com/pjgpetecodes/dotnet6pi/master/install.sh | bash
+# RUN apt-get install -y dotnet6
 #--------------------------------------------------------
 
 # Install the vs code server and expose the port for it
